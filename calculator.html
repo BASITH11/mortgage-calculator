@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width",initial-scale="1.0" >
+<title>mortgage calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Pixelify+Sans:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="outer">
+         <div class="inner">
+               
+               <p id="p1">Mortgage calculator</p>
+               <div class="clear">
+               <button id="btn2" > clear </button>
+               </div>
+               <div class="ma">
+               <label  >Mortgage Amount</label>
+               <input type="text" name="amount" id="amount" placeholder="$"  ><br>
+               <p id="p12">This Field Is Required</p>
+               </div>
+          <div class="element1">
+               <span>
+               <label >Mortgage Year</label>
+               <input type="text" name="year"  id="year" placeholder="Years"  >
+               <p id="p10">This Field Is Required</p>
+               </span>
+               <span>
+               <label >Interest Rate</label>
+               <input type="text" name="interest"  id="interest" placeholder="%" required >
+               <p id="p11">This Field Is Required</p>
+               </span>
+               </div>
+          <div class="type">
+               <p id="p2">Mortgage type<p>
+               <span class="s1">
+               
+               <input type="radio" id="repay"  name="radio" ><label for="repay" >Repayment</label>
+               </span>
+               <span class="s2">
+               
+               <input type="radio" id="ionly" name="radio" ><label for="ionly" >Interest Only</label>
+               </span>
+          </div>
+               <div class="calculate">
+               <button id="btn"  > Calculate Repayments</button>
+               </div>
+        </div>
+
+     <div class="second">
+
+               <div class="fillup">
+               <img src="file:///C:/Users/basit/Downloads/mortgage-repayment-calculator-main%20(1)/mortgage-repayment-calculator-main/assets/images/illustration-empty.svg" id="image">
+               <p id="p3"> Result shown here</p>
+               <p id="p4">Complete the form and click"calculate repayments" to see what your monthly repayments would be.</p>
+                </div>
+
+                <div class="complete">
+               <p id="p5">Your results</p>
+               <p> your result are shown below based on the information you provided.To adjust the results,edit the form and click"calculator repayments" again</p>
+               <div class="display">
+               <p> Your Monthly Repayment</p>
+               <p id="p6">$5673.8</p>
+                <hr>
+               <p id="p7">Total you'll repay over the term</p>
+               <p id="p8">$534,7677.94</p>
+               </div>
+               
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>                                             
